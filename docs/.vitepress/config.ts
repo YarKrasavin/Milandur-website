@@ -57,6 +57,9 @@ export default defineConfig({
     ],
     socialLinks: [{ icon: 'discord', link: 'https://discord.gg/B3aXZ77QPe' }],
 
+    cleanUrls: {
+      boolean: true
+    },
     sidebar: {
       // Эта боковая панель отображается, когда пользователь находится в директории `guide`
       '/wiki/': [
