@@ -1,5 +1,7 @@
 ---
 layout: home
+title: Главная страница
+editLink: true
 
 hero:
   name: Milandur
