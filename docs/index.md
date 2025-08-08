@@ -34,7 +34,6 @@ features:
 
 # Ответы на частые вопросы:
 
-<details>
-<summary><strong>Какая версия?</strong></summary>
+::: details Какая версия?
 **Для захода вам нужна версия Java 1.21.5!**
-</details>
+:::
