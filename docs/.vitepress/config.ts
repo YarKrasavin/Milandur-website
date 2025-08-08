@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress';
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'ru-RU',
+  cleanUrls: true,
   title: 'Milandur',
   description: 'Milandur - Minecraft Сервер',
   head: [['link', { rel: 'icon', href: '/logo-64.png' }]],
@@ -42,6 +43,7 @@ export default defineConfig({
     nav: [
       { text: 'Главное', link: '/' },
       { text: 'Правила', link: '/rules' },
+      { text: 'Карта', link: '/map' },
       { text: 'Вики', link: '/wiki' },
 
       // {
@@ -57,9 +59,6 @@ export default defineConfig({
     ],
     socialLinks: [{ icon: 'discord', link: 'https://discord.gg/B3aXZ77QPe' }],
 
-    cleanUrls: {
-      boolean: true
-    },
     sidebar: {
       // Эта боковая панель отображается, когда пользователь находится в директории `guide`
       '/wiki/': [
