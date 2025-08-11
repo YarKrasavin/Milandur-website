@@ -2,7 +2,7 @@
 <template>
   <div class="map-container">
     <iframe
-      src="https://map.milandur.ru/"
+      src="https://212.80.7.213:20994"
       frameborder="0"
       allowfullscreen
       class="fullscreen-iframe"
