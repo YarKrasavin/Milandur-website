@@ -10,13 +10,13 @@ hero:
     src: /rlogi.png
     alt: Milandur
   tagline: Здесь вы можете найти всю интересующую вас информацию о этом проекте.
-  <!-- actions:
+  actions:
     - theme: brand
       text: Вики
       link: /wiki
     - theme: alt
       text: Discord
-      link: https://discord.gg/B3aXZ77QPe -->
+      link: https://discord.gg/B3aXZ77QPe
 features:
   - icon: 📝
     title: Сосредоточьтесь на своем контенте
