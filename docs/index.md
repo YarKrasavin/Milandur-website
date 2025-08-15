@@ -12,8 +12,8 @@ hero:
   tagline: Здесь вы можете найти всю интересующую вас информацию о этом проекте.
   <!-- actions:
     - theme: brand
-      text: Начать
-      link: /example
+      text: Вики
+      link: /wiki
     - theme: alt
       text: Discord
       link: https://discord.gg/B3aXZ77QPe -->
@@ -34,7 +34,7 @@ features:
 # Ответы на частые вопросы:
 
 ::: details Какая версия?
-**Для захода вам нужна версия Java 1.21.5!**
+**Для захода вам нужна версия Java 1.21.6!**
 :::
 ::: details Можно ли зайти с Bedrock?
 **Нет, только Java**
