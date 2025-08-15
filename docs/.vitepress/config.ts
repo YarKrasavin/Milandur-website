@@ -89,6 +89,7 @@ export default defineConfig({
             { text: 'Банк', link: '/wiki/bank' },
             { text: 'Лупа', link: '/wiki/lupa' },
             { text: 'Настольные игры', link: '/wiki/boardgames' },
+            { text: 'Команды', link: '/wiki/cmd' },
           ],
         },
       ],
