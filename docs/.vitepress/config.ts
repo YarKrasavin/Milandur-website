@@ -75,7 +75,8 @@ export default defineConfig({
         {
           text: 'Руководство',
           items: [
-            { text: 'Начало', link: '/wiki/' }
+            { text: 'Начало', link: '/wiki/' },
+            { text: 'Как играть?', link: '/wiki/playS' }
           ],
         },
         {
