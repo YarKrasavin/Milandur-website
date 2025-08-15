@@ -59,6 +59,10 @@ export default defineConfig({
     ],
     socialLinks: [{ icon: 'discord', link: 'https://discord.gg/B3aXZ77QPe' }],
 
+    outline: {
+            label: "На этой странице",
+        },
+
     sidebar: {
       // Эта боковая панель отображается, когда пользователь находится в директории `guide`
       '/about/': [
@@ -78,7 +82,8 @@ export default defineConfig({
           text: 'Механики',
           items: [
             { text: 'Банк', link: '/wiki/bank' },
-            { text: 'Лупа', link: '/wiki/lupa' }
+            { text: 'Лупа', link: '/wiki/lupa' },
+            { text: 'Настольные игры', link: '/wiki/boardgames' },
           ],
         },
       ],
