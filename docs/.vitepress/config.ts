@@ -80,10 +80,11 @@ export default defineConfig({
         },
         {
           text: 'Механики',
+          collapsed: false,
           items: [
-            { text: 'Банк', link: '/wiki/bank' },
-            { text: 'Лупа', link: '/wiki/lupa' },
-            { text: 'Настольные игры', link: '/wiki/boardgames' },
+            { text: 'Банк', link: '/features/bank' },
+            { text: 'Лупа', link: '/features/lupa' },
+            { text: 'Настольные игры', link: '/features/boardgames' },
           ],
         },
       ],
