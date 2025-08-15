@@ -42,7 +42,7 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: 'Главное', link: '/' },
-      { text: 'О сервере', link: '/about' },
+      // { text: 'О сервере', link: '/about' },
       { text: 'Правила', link: '/rules' },
       { text: 'Вики', link: '/wiki' },
 
@@ -68,12 +68,12 @@ export default defineConfig({
         },
     sidebar: {
       // Эта боковая панель отображается, когда пользователь находится в директории `guide`
-      // '/about/': [
-      //   {
-      //     text: 'О сервере',
-      //     items: [{ text: 'О Milandur', link: '/about/' }],
-      //   },
-      // ],
+      '/about/': [
+        {
+          text: 'О сервере',
+          items: [{ text: 'О Milandur', link: '/about/' }],
+        },
+      ],
       '/wiki/': [
         {
           text: 'Руководство',
