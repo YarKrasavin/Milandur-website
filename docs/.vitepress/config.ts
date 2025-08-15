@@ -70,7 +70,16 @@ export default defineConfig({
       '/wiki/': [
         {
           text: 'Руководство',
-          items: [{ text: 'Начало', link: '/wiki/' }],
+          items: [
+            { text: 'Начало', link: '/wiki/' }
+          ],
+        },
+        {
+          text: 'Механики',
+          items: [
+            { text: 'Банк', link: '/wiki/bank' },
+            { text: 'Лупа', link: '/wiki/lupa' }
+          ],
         },
       ],
     },
