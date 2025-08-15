@@ -62,7 +62,10 @@ export default defineConfig({
     outline: {
             label: "На этой странице",
         },
-
+    docFooter: {
+            prev: 'Предыдущая страница',
+            next: 'Следующая страница'
+        },
     sidebar: {
       // Эта боковая панель отображается, когда пользователь находится в директории `guide`
       '/about/': [
@@ -76,7 +79,7 @@ export default defineConfig({
           text: 'Руководство',
           items: [
             { text: 'Начало', link: '/wiki/' },
-            { text: 'Как играть?', link: '/wiki/playS' }
+            { text: 'Как играть?', link: '/wiki/play' }
           ],
         },
         {
