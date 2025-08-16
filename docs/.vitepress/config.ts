@@ -86,10 +86,12 @@ export default defineConfig({
           text: 'Механики и команды',
           collapsed: true,
           items: [
+            { text: 'Чат', link: '/wiki/chat' },
             { text: 'Банк', link: '/wiki/bank' },
             { text: 'Лупа', link: '/wiki/lupa' },
             { text: 'Настольные игры', link: '/wiki/boardgames' },
             { text: 'Команды', link: '/wiki/cmd' },
+            { text: 'Мелкие плагины', link: '/wiki/plugins' },
           ],
         },
       ],
