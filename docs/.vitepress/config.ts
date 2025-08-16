@@ -92,6 +92,7 @@ export default defineConfig({
             { text: 'Настольные игры', link: '/wiki/boardgames' },
             { text: 'Команды', link: '/wiki/cmd' },
             { text: 'Мелкие плагины', link: '/wiki/plugins' },
+            { text: 'Пожертвования', link: '/wiki/donations' },
           ],
         },
       ],
