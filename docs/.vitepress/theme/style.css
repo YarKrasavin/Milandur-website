@@ -85,19 +85,3 @@
     color: var(--vp-c-text-1);
     transition: color .25s;
 }
-
-body .VPNavBar {
-  background-color: rgba(255, 255, 255, 0.4) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-}
-
-body .dark .VPNavBar {
-  background-color: rgba(29, 29, 32, 0.5) !important;
-}
-
-body .VPNavBar .wrapper, 
-body .VPNavBar .container,
-body .VPNavBarMenu {
-  background-color: transparent !important;
-}
