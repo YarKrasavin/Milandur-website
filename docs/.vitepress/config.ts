@@ -43,7 +43,7 @@ export default defineConfig({
     nav: [
       { text: '<span class="nav-btn-primary">Главное</span>', link: '/' },
       // { text: 'О сервере', link: '/about' },
-      { text: '<span class="nav-btn-secondary">Правила</span>', link: '/rules' },
+      { text: '<span class="nav-btn-primary">Правила</span>', link: '/rules' },
       { text: 'Вики', link: '/wiki' },
 
       // {
