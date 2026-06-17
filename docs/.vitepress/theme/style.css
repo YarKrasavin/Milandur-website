@@ -15,65 +15,50 @@
   --vp-home-hero-image-filter: blur(44px);
 }
 
-/* ==========================================================================
-   1. ШАПКА-ОСТРОВОК С БЛЮРОМ (FLOATING NAVBAR)
-   ========================================================================= */
 .VPNavBar {
-  /* Эффект матового стекла */
   background-color: rgba(255, 255, 255, 0.4) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   
-  /* Геометрия островка */
   max-width: 1200px;                    
   width: 92% !important;                
   left: 50% !important;                 
   transform: translateX(-50%);          
+  
   margin-top: 16px;                     
   border-radius: 25px;                   
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  border-bottom: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   
-  /* Тень и анимация */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
   transition: all 0.3s ease;
-  overflow: hidden; /* Чтобы внутренние фоны не вылезали за скругление */
 }
 
-/* Настройки для темной темы */
 .dark .VPNavBar {
-  background-color: rgba(29, 29, 32, 0.5) !important; /* Вместо transparent, чтобы был виден блюр в темной теме */
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* ⚡️ ФИКС ТЕМНОГО ПРЯМОУГОЛЬНИКА СВЕРХУ: Срезаем фоны у всех дочерних контейнеров VitePress */
-.VPNavBarContainer, 
-.VPNavBarMenu, 
-.VPNavBarTitle,
-.VPNavBarContent,
-.VPNavBarSearch,
-.VPNavBarAppearance,
-.VPNavBarSocialLinks,
-.VPNavBarExtra {
-  background-color: transparent !important;
-  background: transparent !important;
+.VPNavBar {
   border-bottom: none !important;
 }
 
-.VPNavBarContainer {
-  padding: 0 24px !important;
-  max-width: 100% !important;
+.VPNavBarMenu, .VPNavBarContainer {
+  background-color: transparent !important;
 }
 
+.VPNavBarContainer {
+  padding: 0 16px !important;
+}
 
-/* ==========================================================================
-   2. ТВОЯ КАСТОМНАЯ КНОПКА (.nav-btn-primary)
-   ========================================================================= */
+.VPNavBar:not(.home.top) .content-body {
+  background-color: transparent !important;
+}
+
 .nav-btn-primary {
-  background-color: transparent !important; /* Принудительно сбрасываем */
+  background-color: transparent;
   color: #9f9f9f !important;             
-  border: 2px solid #2b2b2b !important;             
+  border: 2px solid #2b2b2b;             
   padding: 8px 22px;                     
   border-radius: 15px;          
   font-weight: 600;
@@ -84,45 +69,37 @@
   line-height: 1;
 }
 
-/* Ховер эффект кнопки */
 .nav-btn-primary:hover {
-  background-color: #2b2b2b !important;             
+  background-color: #2b2b2b;             
   color: #ffffff !important;             
   transform: translateY(-1.5px);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Активное состояние кнопки (когда на этой странице) */
 .VPNavBarMenuLink.active .nav-btn-primary {
-  background-color: #111111 !important;             
+  background-color: #111111;             
   color: #ffffff !important;
-  border-color: #111111 !important;
-  transform: none !important;
-  box-shadow: none !important;
+  border-color: #111111;
+  transform: none;
   cursor: default;
 }
 
-
-/* ==========================================================================
-   3. СБРОС И КОРРЕКТИРОВКА ССЫЛОК VITEPRESS
-   ========================================================================= */
-.VPNavBarMenuLink {
-  display: flex;
-  align-items: center;
-  padding: 0 5px;
-  line-height: var(--vp-nav-height);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--vp-c-text-1);
-  transition: color .25s;
-}
-
-/* Отключаем стандартное поведение ссылок при ховере и активе, чтобы не ломать кнопку */
 .VPNavBarMenuLink:hover {
   text-decoration: none !important;
-  color: inherit !important; 
+  color: transparent !important; 
 }
 
 .VPNavBarMenuLink.active {
   color: inherit !important;
+}
+
+.VPNavBarMenuLink {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    line-height: var(--vp-nav-height);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-text-1);
+    transition: color .25s;
 }
