@@ -111,36 +111,47 @@
   width: 92% !important;
 }
 
-/* Выравниваем элементы внутри островка строго по центру распределения */
-.VPNavBarContainer {
-  max-width: 100% !important;
-  padding: 0 24px !important;
-  display: flex !important;
-  justify-content: space-between !important; /* Название слева, кнопки по центру/справа */
-  align-items: center !important;
+.VPNavBar.has-sidebar {
+  padding-left: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 92% !important;
 }
 
-/* Центрируем блок с кнопками навигации, независимо от окружения */
+/* Главный контейнер внутренностей шапки */
+.VPNavBarContainer {
+  max-width: 100% !important;
+  padding: 0 32px !important; /* Увеличили внутренние отступы с боков */
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+/* Контейнер, где лежат сами кнопки навигации */
 .VPNavBarMenu {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  flex-grow: 1 !important; /* Позволяет меню занять всё свободное пространство по центру */
+  flex-grow: 1 !important;
+  gap: 10px !important; /* Расстояние между кнопками */
 }
 
-/* Убираем дефолтные смещения кнопок во вложенных папках */
-.VPNavBarAppearance, .VPNavBarSocialLinks, .VPNavBarExtra {
+/* Запрещаем кнопкам деформироваться и вылетать наружу */
+.VPNavBarMenuLink {
+  flex-shrink: 0 !important; /* Кнопки не будут сжиматься */
+  display: inline-flex !important;
+}
+
+/* Сдвигаем правый блок (переключатель темы и дискорд), чтобы они не наезжали на кнопки */
+.VPNavBarContent {
+  flex-shrink: 0 !important;
   display: flex !important;
   align-items: center !important;
+  justify-content: flex-end !important;
 }
 
-/* Скрываем поиск на ВСЕХ страницах по умолчанию */
+/* Если поиск где-то остался, ограничиваем его ширину, чтобы он не объедал кнопки */
 .VPNavBarSearch {
-  display: none !important;
-}
-
-/* Включаем поиск ТОЛЬКО на главной странице */
-html:not([class*="/wiki/"]) .VPNavBarSearch,
-html[class=""] .VPNavBarSearch {
-  display: block !important;
+  max-width: 180px !important;
 }

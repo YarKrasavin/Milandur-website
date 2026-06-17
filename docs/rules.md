@@ -1,6 +1,7 @@
 ---
 title: Правила
 editLink: true
+search: false
 ---
 
 # Правила Milandur:

@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Главная страница
+search: false
 editLink: true
 
 hero:

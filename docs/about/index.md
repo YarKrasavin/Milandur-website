@@ -1,6 +1,7 @@
 ---
 title: О сервере
 editLink: true
+search: false
 ---
 
 # Что такое этот ваш Milandur?
