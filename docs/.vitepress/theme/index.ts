@@ -1,16 +1,14 @@
-// https://vitepress.dev/guide/custom-theme
+import DefaultTheme from 'vitepress/theme';
 import { h } from 'vue';
-import Theme from 'vitepress/theme';
 import './style.css';
 
 export default {
-  ...Theme,
-  Layout: () => {
-    return h(Theme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    });
+  extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      // Сюда можно будет пихать слоты, например:
+      // 'nav-bar-content-after': () => h('div', 'Привет')
+    })
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
-  },
+  enhanceApp({ app, router, siteData }) {}
 };
