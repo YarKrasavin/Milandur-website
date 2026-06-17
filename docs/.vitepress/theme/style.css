@@ -26,7 +26,7 @@
   transform: translateX(-50%);          
   
   margin-top: 16px;                     
-  border-radius: 8px;                   
+  border-radius: 25px;                   
   border: 1px solid rgba(255, 255, 255, 0.2);
   
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
@@ -34,20 +34,13 @@
 }
 
 .dark .VPNavBar {
-  background-color: rgba(29, 29, 32, 0.5) !important;
+  background-color: transparent !important;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
 }
 
 .VPNavBar {
   border-bottom: none !important;
-}
-
-.VPNavBar.has-sidebar {
-  background-color: rgba(255, 255, 255, 0.4) !important;
-}
-.dark .VPNavBar.has-sidebar {
-  background-color: rgba(29, 29, 32, 0.5) !important;
 }
 
 .VPNavBarMenu, .VPNavBarContainer {
