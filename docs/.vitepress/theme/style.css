@@ -118,40 +118,59 @@
   width: 92% !important;
 }
 
-/* Главный контейнер внутренностей шапки */
-.VPNavBarContainer {
-  max-width: 100% !important;
-  padding: 0 32px !important; /* Увеличили внутренние отступы с боков */
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  gap: 16px !important;
+.VPNavBar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 92% !important;
 }
 
-/* Контейнер, где лежат сами кнопки навигации */
+/* Сбрасываем ограничения сетки VitePress, которые ломают ширину */
+.VPNavBarContainer {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 24px !important;
+  display: flex !important;
+  justify-content: space-between !important; /* Разносим строго: Лого | Меню | Иконки */
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* ЛЕВАЯ ЧАСТЬ: Логотип и поиск (если он включен) */
+.VPNavBarTitle, 
+.VPNavBarSearch {
+  flex-shrink: 0 !important; /* Не даем им сжиматься */
+}
+
+/* ЦЕНТРАЛЬНАЯ ЧАСТЬ: Твои кнопки */
+.VPNavBarContent {
+  flex-grow: 1 !important;    /* Заставляет этот блок занять весь центр */
+  display: flex !important;
+  justify-content: center !important; /* Центрируем кнопки внутри выделенного места */
+  align-items: center !important;
+  background: transparent !important;
+}
+
 .VPNavBarMenu {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  flex-grow: 1 !important;
-  gap: 10px !important; /* Расстояние между кнопками */
+  gap: 12px !important;       /* Расстояние между кнопками */
 }
 
-/* Запрещаем кнопкам деформироваться и вылетать наружу */
+/* Твои кастомные кнопки — запрещаем перенос строки и деформацию */
 .VPNavBarMenuLink {
-  flex-shrink: 0 !important; /* Кнопки не будут сжиматься */
-  display: inline-flex !important;
+  white-space: nowrap !important; /* Запрещает тексту внутри кнопки переноситься */
+  flex-shrink: 0 !important;      /* Запрещает кнопкам уменьшаться */
+  padding: 0 !important;          /* Убираем лишние дефолтные отступы ссылок */
 }
 
-/* Сдвигаем правый блок (переключатель темы и дискорд), чтобы они не наезжали на кнопки */
-.VPNavBarContent {
-  flex-shrink: 0 !important;
+/* ПРАВАЯ ЧАСТЬ: Переключатель темы и дискорд */
+.VPNavBarAppearance,
+.VPNavBarSocialLinks,
+.VPNavBarExtra {
+  flex-shrink: 0 !important;  /* Не даем правым иконкам ужиматься */
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-end !important;
-}
-
-/* Если поиск где-то остался, ограничиваем его ширину, чтобы он не объедал кнопки */
-.VPNavBarSearch {
-  max-width: 180px !important;
 }
