@@ -41,7 +41,7 @@ export default defineConfig({
     },
     logo: '/logo.png',
     nav: [
-      { text: 'Главное', link: '/' },
+      { text: '<span class="nav-btn-primary">Главное</span>', link: '/' },
       // { text: 'О сервере', link: '/about' },
       { text: 'Правила', link: '/rules' },
       { text: 'Вики', link: '/wiki' },
