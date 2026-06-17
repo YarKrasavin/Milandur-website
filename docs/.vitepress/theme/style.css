@@ -103,3 +103,44 @@
     color: var(--vp-c-text-1);
     transition: color .25s;
 }
+
+.VPNavBar.has-sidebar {
+  padding-left: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 92% !important;
+}
+
+/* Выравниваем элементы внутри островка строго по центру распределения */
+.VPNavBarContainer {
+  max-width: 100% !important;
+  padding: 0 24px !important;
+  display: flex !important;
+  justify-content: space-between !important; /* Название слева, кнопки по центру/справа */
+  align-items: center !important;
+}
+
+/* Центрируем блок с кнопками навигации, независимо от окружения */
+.VPNavBarMenu {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-grow: 1 !important; /* Позволяет меню занять всё свободное пространство по центру */
+}
+
+/* Убираем дефолтные смещения кнопок во вложенных папках */
+.VPNavBarAppearance, .VPNavBarSocialLinks, .VPNavBarExtra {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Скрываем поиск на ВСЕХ страницах по умолчанию */
+.VPNavBarSearch {
+  display: none !important;
+}
+
+/* Включаем поиск ТОЛЬКО на главной странице */
+html:not([class*="/wiki/"]) .VPNavBarSearch,
+html[class=""] .VPNavBarSearch {
+  display: block !important;
+}
