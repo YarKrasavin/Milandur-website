@@ -9,36 +9,36 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/logo-64.png' }]],
 
   themeConfig: {
-    search: {
-      provider: 'local',
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: {
-                buttonText: 'Поиск',
-                buttonAriaLabel: 'Поиск',
-              },
-              modal: {
-                displayDetails: 'Отобразить подробный список',
-                resetButtonTitle: 'Сбросить поиск',
-                backButtonTitle: 'Закрыть поиск',
-                noResultsText: 'Нет результатов по запросу',
-                footer: {
-                  selectText: 'выбрать',
-                  selectKeyAriaLabel: 'выбрать',
-                  navigateText: 'перейти',
-                  navigateUpKeyAriaLabel: 'стрелка вверх',
-                  navigateDownKeyAriaLabel: 'стрелка вниз',
-                  closeText: 'закрыть',
-                  closeKeyAriaLabel: 'esc',
-                },
-              },
-            },
-          },
-        },
-      },
-    },
+    // search: {
+    //   provider: 'local',
+    //   options: {
+    //     locales: {
+    //       root: {
+    //         translations: {
+    //           button: {
+    //             buttonText: 'Поиск',
+    //             buttonAriaLabel: 'Поиск',
+    //           },
+    //           modal: {
+    //             displayDetails: 'Отобразить подробный список',
+    //             resetButtonTitle: 'Сбросить поиск',
+    //             backButtonTitle: 'Закрыть поиск',
+    //             noResultsText: 'Нет результатов по запросу',
+    //             footer: {
+    //               selectText: 'выбрать',
+    //               selectKeyAriaLabel: 'выбрать',
+    //               navigateText: 'перейти',
+    //               navigateUpKeyAriaLabel: 'стрелка вверх',
+    //               navigateDownKeyAriaLabel: 'стрелка вниз',
+    //               closeText: 'закрыть',
+    //               closeKeyAriaLabel: 'esc',
+    //             },
+    //           },
+    //         },
+    //       },
+    //     },
+    //   },
+    // },
     logo: '/logo.png',
     nav: [
       { text: '<span class="nav-btn-primary">Главное</span>', link: '/' },
