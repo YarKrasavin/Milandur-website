@@ -15,21 +15,21 @@
   --vp-home-hero-image-filter: blur(44px);
 }
 .nav-btn-primary {
-  background-color: var(--vp-c-brand-1); /* Изумрудный цвет VitePress */
-  color: #ffffff !important;             /* Белый текст */
-  padding: 6px 16px;                     /* Внутренние отступы */
-  border-radius: 20px;                   /* Округлые края */
+  background-color: var(--vp-c-brand-2);
+  color: #ffffff !important;           
+  padding: 6px 16px;                    
+  border-radius: 20px;                  
   font-weight: 600;
   font-size: 14px;
-  transition: all 0.25s ease;            /* Плавная анимация */
+  transition: all 0.25s ease;           
   display: inline-block;
   line-height: 1;
 }
 
 .nav-btn-primary:hover {
-  background-color: var(--vp-c-brand-2); /* Чуть темнее при наведении */
-  transform: translateY(-1px);           /* Легкий подъем вверх */
-  box-shadow: 0 4px 12px rgba(62, 175, 124, 0.3); /* Мягкое свечение */
+  background-color: var(--vp-c-brand-1);
+  transform: translateY(-1px);   
+  box-shadow: 0 4px 12px rgba(62, 175, 124, 0.3);
 }
 
 .VPNavBarMenuLink:hover {
