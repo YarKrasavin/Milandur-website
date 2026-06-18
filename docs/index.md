@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Главная страница
 editLink: true
 ---
