@@ -42,27 +42,21 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: '<span class="nav-btn-primary">Главное</span>', link: '/' },
-      // { text: '<span class="nav-btn-primary">О сервере</span>', link: '/about/' },
-      // { text: '<span class="nav-btn-primary">Правила</span>', link: '/rules' },
-      // { text: '<span class="nav-btn-primary">Вики</span>', link: '/wiki/' },
+      { text: '<span class="nav-btn-primary">О сервере</span>', link: '/about/' },
+      { text: '<span class="nav-btn-primary">Правила</span>', link: '/rules' },
+      { text: '<span class="nav-btn-primary">Вики</span>', link: '/wiki/' },
       { text: '<span class="nav-btn-primary">Карта</span>', link: '/map' },
-      {
-      text: '<span class="nav-btn-primary">Информация</span>',
-      items: [
-        {
-          text: '<span class="nav-dropdown-item">Правила</span>',
-          link: '/rules'
-        },
-        {
-          text: '<span class="nav-dropdown-item">Вики</span>',
-          link: '/wiki/'
-        },
-        {
-          text: '<span class="nav-dropdown-item">О сервере</span>',
-          link: '/about/'
-        }
-      ]
-    },
+
+      // {
+      //   text: 'Dropdown Menu',
+      //   items: [
+      //     { text: 'Item A', link: '/item-1' },
+      //     { text: 'Item B', link: '/item-2' },
+      //     { text: 'Item C', link: '/item-3' },
+      //   ],
+      // },
+
+      // ...
     ],
     socialLinks: [{ icon: 'discord', link: 'https://discord.gg/B3aXZ77QPe' }],
 
