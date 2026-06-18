@@ -103,3 +103,67 @@
     color: var(--vp-c-text-1);
     transition: color .25s;
 }
+
+.VPFlyout {
+  display: inline-flex !important;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* Центрируем иконку стрелки рядом с текстом */
+.VPFlyout .icon {
+  margin-left: 4px !important;
+  margin-top: 0 !important;
+  transition: transform 0.25s;
+}
+
+/* ⚡️ СТИЛИ ДЛЯ ВНУТРЕННИХ ССЫЛОК СПИСКА */
+.nav-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9f9f9f !important;             /* Изначально серый текст */
+  border-radius: 6px;                    /* Прямоугольное скругление под стиль сайта */
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Ховер эффект для пунктов внутри меню */
+.VPMenuLink:hover .nav-dropdown-item {
+  background-color: #2b2b2b !important;  /* Темно-серый фон при наведении */
+  color: #ffffff !important;             /* Белый текст */
+}
+
+/* Активное состояние (если мы на странице из меню) */
+.VPMenuLink.active .nav-dropdown-item {
+  background-color: #111111 !important;  /* Почти черный */
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* СБРОС СТИЛЕЙ КНОПКИ ДЛЯ ВНУТРЕННИХ ССЫЛОК (на случай если оставил старый класс) */
+.VPMenuLink .nav-btn-primary {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  color: #9f9f9f !important;
+  width: 100%;
+  border-radius: 6px !important;
+}
+.VPMenuLink:hover .nav-btn-primary {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Убираем стандартные отступы самого контейнера VitePress, чтобы наши пункты вставали встык */
+.VPMenu .action {
+  padding: 0 !important;
+}
+.VPMenu .item {
+  padding: 4px !important; /* Небольшой аккуратный зазор между строками */
+}

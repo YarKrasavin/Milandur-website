@@ -50,15 +50,15 @@ export default defineConfig({
       text: '<span class="nav-btn-primary">Информация</span>',
       items: [
         {
-          text: '<span class="nav-btn-primary">Правила</span>',
+          text: '<span class="nav-dropdown-item">Правила</span>',
           link: '/rules'
         },
         {
-          text: '<span class="nav-btn-primary">Вики</span>',
+          text: '<span class="nav-dropdown-item">Вики</span>',
           link: '/wiki/'
         },
         {
-          text: '<span class="nav-btn-primary">О сервере</span>',
+          text: '<span class="nav-dropdown-item">О сервере</span>',
           link: '/about/'
         }
       ]
