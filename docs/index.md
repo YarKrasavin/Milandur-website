@@ -11,14 +11,3 @@ editLink: true
     allowfullscreen
   ></iframe>
 </ClientOnly>
-
----
-
-# Ответы на частые вопросы:
-
-::: details Какая версия?
-**Для захода вам нужна версия Java 1.21.6!**
-:::
-::: details Можно ли зайти с Bedrock?
-**Нет, только Java**
-:::
