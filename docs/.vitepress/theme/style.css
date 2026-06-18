@@ -167,3 +167,51 @@
 .VPMenu .item {
   padding: 4px !important; /* Небольшой аккуратный зазор между строками */
 }
+/* ==========================================================================
+   7. УДАЛЕНИЕ СТРЕЛОЧКИ И СТИЛИЗАЦИЯ ДРОПДАУНА
+   ========================================================================= */
+
+/* ПОЛНОСТЬЮ УБИРАЕМ СТРЕЛОЧКУ */
+.VPFlyout .text .icon {
+  display: none !important;
+}
+
+/* Убираем лишний отступ справа у текста, который был нужен для стрелочки */
+.VPFlyout .text {
+  padding-right: 0 !important;
+}
+
+/* СТИЛИ ДЛЯ ВНУТРЕННИХ ССЫЛОК СПИСКА */
+.nav-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9f9f9f !important;             /* Серый текст по умолчанию */
+  border-radius: 8px;                    /* Мягкое прямоугольное скругление */
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Ховер эффект для пунктов внутри меню */
+.VPMenuLink:hover .nav-dropdown-item {
+  background-color: #2b2b2b !important;  /* Темно-серый фон при наведении */
+  color: #ffffff !important;             /* Белый текст */
+}
+
+/* Активное состояние (если открыта эта страница) */
+.VPMenuLink.active .nav-dropdown-item {
+  background-color: #111111 !important;  /* Почти черный активный фон */
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Убираем дефолтные отступы контейнера VitePress, чтобы пункты вставали ровно */
+.VPMenu .action {
+  padding: 0 !important;
+}
+.VPMenu .item {
+  padding: 2px 4px !important; 
+}
