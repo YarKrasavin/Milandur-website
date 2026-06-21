@@ -158,3 +158,35 @@
   align-items: center !important;
   background-color: transparent !important;
 }
+/* ==========================================================================
+   9. ФИКС ПРАВОГО КРАЯ ИКОНОК (УБИРАЕМ ПУСТОТУ СПРАВА)
+   ========================================================================= */
+
+/* Намертво прижимаем самый крайний правый контейнер к углу островка */
+.VPNavBarContent-end {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Скрываем пустые неиспользуемые компоненты VitePress, которые создают фантомные отступы */
+.VPNavBarScreenMenu,
+.VPNavBarHamburger {
+  display: none !important;
+}
+
+/* Форсируем, чтобы основной блок контента занимал всю свободную ширину и расталкивал края */
+.VPNavBarContent {
+  flex-grow: 1 !important;
+  display: flex !important;
+  justify-content: space-between !important; /* Логотип улетает влево, меню и иконки — вправо */
+}
+
+/* Фиксируем блок меню и иконок вместе */
+.VPNavBarContent-body {
+  display: flex !important;
+  flex-grow: 1 !important;
+  justify-content: flex-end !important; /* Выравнивание по правому краю */
+  gap: 16px; /* Зазор между кнопками меню и иконками переключателя/дискорда */
+}
