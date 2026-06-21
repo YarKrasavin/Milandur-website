@@ -59,7 +59,6 @@ export default defineConfig({
 
       // ...
     ],
-    socialLinks: [{ icon: 'discord', link: 'https://discord.gg/B3aXZ77QPe' }],
 
     outline: {
             label: "На этой странице",
