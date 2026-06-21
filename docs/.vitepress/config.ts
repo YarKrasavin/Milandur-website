@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'ru-RU',
   cleanUrls: true,
+  appearance: "force-dark",
   title: 'Milandur',
   description: 'Milandur - Minecraft Сервер',
   head: [['link', { rel: 'icon', href: '/logo-64.png' }]],
