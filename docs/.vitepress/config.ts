@@ -46,7 +46,7 @@ export default defineConfig({
       { text: '<span class="nav-btn-primary">О сервере</span>', link: '/about/' },
       { text: '<span class="nav-btn-primary">Правила</span>', link: '/rules' },
       { text: '<span class="nav-btn-primary">Вики</span>', link: '/wiki/' },
-      { text: '<span class="nav-btn-primary">Карта</span>', link: '/map' },
+      { text: '<span class="nav-btn-primary">Карта</span>', link: '/map' }
 
       // {
       //   text: 'Dropdown Menu',
