@@ -107,7 +107,7 @@ editLink: true
 
   </main>
 
-  <script>
+  <script setup>
     function copyServerIP(buttonElement, ipAddress) {
       // 1. Копируем текст в буфер обмена
       navigator.clipboard.writeText(ipAddress).then(() => {
