@@ -12,6 +12,7 @@ editLink: true
         <img src="layers0.svg" alt="Иконка слоев" />
         <span>Не зевай-изучай!</span>
       </div>
+
       <h1 class="hero-title">Уникальный<br />Приватный сервер<br />Друзей</h1>
       <p class="hero-subtitle">Твори, создавай, выживай, веселись, находи новых друзей.</p>
       
