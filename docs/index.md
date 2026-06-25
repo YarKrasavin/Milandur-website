@@ -4,11 +4,11 @@ title: Главная страница
 editLink: true
 ---
 
-<ClientOnly>
+
   <section class="hero">
       <div class="hero-content">
         <div class="hero-note">
-          <img src="layers0.svg" alt="Иконка слоев">
+          <img src="layers0.svg" alt="Иконка слоев" />
           <span>Не зевай-изучай!</span>
         </div>
         <h1 class="hero-title">Уникальный<br>Приватный сервер<br>Друзей</h1>
@@ -17,7 +17,7 @@ editLink: true
         <div class="cta-group">
           <a href="#" class="btn btn-primary">
             <span>Присоединиться</span>
-            <img src="group0.svg" alt="Иконка" style="width: 20px; height: 20px;">
+            <img src="group0.svg" alt="Иконка" style="width: 20px; height: 20px;" />
           </a>
           <button class="btn btn-secondary" onclick="copyServerIP(this, 'play.server.ru')">
             <span>Скопировать IP</span>
@@ -26,7 +26,7 @@ editLink: true
       </div>
       
       <div class="hero-image-wrap">
-        <img class="hero-image" src="6f86a0a5c50d171d.png" alt="Промо изображение сервера">
+        <img class="hero-image" src="6f86a0a5c50d171d.png" alt="Промо изображение сервера" />
       </div>
     </section>
 
@@ -54,13 +54,13 @@ editLink: true
         <div class="feature-card card-community">
           <h3>Комьюнити</h3>
           <p>Мы прилагаем все усилия, чтобы поддерживать наше сообщество комфортным и дружным!</p>
-          <img class="card-img" src="_10.png" alt="Комьюнити">
+          <img class="card-img" src="_10.png" alt="Комьюнити" />
         </div>
 
         <div class="feature-card card-vanilla">
           <h3>Ванильность</h3>
           <p>Классический игровой процесс без лишних модов.</p>
-          <img class="card-img" src="grass-block-10.png" alt="Блок травы">
+          <img class="card-img" src="grass-block-10.png" alt="Блок травы" />
         </div>
 
         <div class="feature-card card-possibilities">
@@ -71,7 +71,7 @@ editLink: true
         <div class="feature-card card-events">
           <h3>Ивенты</h3>
           <p>Регулярные серверные события.</p>
-          <img class="card-img" src="blue-geode-crystal-10.png" alt="Кристалл">
+          <img class="card-img" src="blue-geode-crystal-10.png" alt="Кристалл" />
         </div>
 
       </div>
@@ -135,4 +135,3 @@ editLink: true
       });
     }
   </script>
-</ClientOnly>
