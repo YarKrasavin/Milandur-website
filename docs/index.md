@@ -31,7 +31,7 @@ sidebar: false
   </div>
   
   <div class="hero-image-wrap">
-    <img class="hero-image" src="/fdg.png" alt="Промо изображение сервера">
+    <img class="hero-image" src="/6f86a0a5c50d171d.png" alt="Промо изображение сервера">
   </div>
 </section>
 
