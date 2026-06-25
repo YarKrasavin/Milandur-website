@@ -105,8 +105,6 @@ editLink: true
       </div>
     </section>
 
-  </main>
-
   <script setup>
     function copyServerIP(buttonElement, ipAddress) {
       // 1. Копируем текст в буфер обмена
